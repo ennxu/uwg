@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>uwg.building &#8212; uwg  documentation</title>
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../index.html">
+          uwg</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../uwg.html">uwg package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../uwg.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.cli.html">uwg.cli package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../uwg.cli.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../uwg.cli.validate.html">uwg.cli.validate module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../uwg.cli.html#module-uwg.cli">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../uwg.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.BEMDef.html">uwg.BEMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.RSMDef.html">uwg.RSMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.UBLDef.html">uwg.UBLDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.UCMDef.html">uwg.UCMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.building.html">uwg.building module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.element.html">uwg.element module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.forcing.html">uwg.forcing module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.infracalcs.html">uwg.infracalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.material.html">uwg.material module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.param.html">uwg.param module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.psychrometrics.html">uwg.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.readDOE.html">uwg.readDOE module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.schdef.html">uwg.schdef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.simparam.html">uwg.simparam module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.solarcalcs.html">uwg.solarcalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.urbflux.html">uwg.urbflux module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.utilities.html">uwg.utilities module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.uwg.html">uwg.uwg module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.weather.html">uwg.weather module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../uwg.html#module-uwg">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../uwg.html">uwg package</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../uwg.html">uwg package</a></li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <h1>Source code for uwg.building</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">division</span><span class="p">,</span> <span class="n">print_function</span>
+
+<span class="kn">from</span> <span class="nn">.psychrometrics</span> <span class="kn">import</span> <span class="n">psychrometrics</span><span class="p">,</span> <span class="n">moist_air_density</span>
+<span class="kn">import</span> <span class="nn">logging</span>
+<span class="c1"># Logger will be disabled by default unless explicitly called in tests</span>
+<span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+
+<span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">isnan</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+
+
+<div class="viewcode-block" id="Building"><a class="viewcode-back" href="../../uwg.building.html#uwg.building.Building">[docs]</a><span class="k">class</span> <span class="nc">Building</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Building building class of specified building characteristics.</span>
+
+<span class="sd">    properties</span>
+<span class="sd">        % Building parameters</span>
+<span class="sd">        floorHeight         % floor height (m)</span>
+<span class="sd">        intHeat;            % timestep internal heat gains (W m-2 bld) (sensible only)</span>
+<span class="sd">        intHeatNight;       % nighttime internal heat gains (W m-2 floor)</span>
+<span class="sd">        intHeatDay;         % daytime internal heat gains (W m-2 floor)</span>
+<span class="sd">        intHeatFRad;        % radiant fraction of internal gains</span>
+<span class="sd">        intHeatFLat;        % latent fraction of internal gains</span>
+<span class="sd">        infil;              % Infiltration (ACH)</span>
+<span class="sd">        vent;               % Ventilation (ACH)</span>
+<span class="sd">        glazingRatio;       % glazing ratio</span>
+<span class="sd">        uValue;             % window U-value (W m-2 K-1) (including film coeff)</span>
+<span class="sd">        shgc;               % window SHGC</span>
+<span class="sd">        condType;           % cooling condensation system type {&#39;AIR&#39;, &#39;WATER&#39;}</span>
+<span class="sd">        cop;                % COP of the cooling system (nominal)</span>
+<span class="sd">        coolSetpointDay;    % daytime indoor cooling set-point (K)</span>
+<span class="sd">        coolSetpointNight;  % nighttime indoor cooling set-point (K)</span>
+<span class="sd">        heatSetpointDay;    % daytime indoor heating set-point (K)</span>
+<span class="sd">        heatSetpointNight;  % nighttime indoor heating set-point (K)</span>
+<span class="sd">        coolCap;            % rated cooling system capacity (W m-2)</span>
+<span class="sd">        heatCap;            % rated heating system capacity (W m-2)</span>
+<span class="sd">        heatEff;            % heating system efficiency (-)</span>
+<span class="sd">        canyon_fraction     # fraction of waste heat released to canyon, default = 1</span>
+<span class="sd">        mSys;               % HVAC supply mass flowrate (kg s-1 m-2)</span>
+<span class="sd">        indoorTemp;         % indoor air temperature (K)</span>
+<span class="sd">        indoorHum;          % indoor specific humidity (kg / kg)</span>
+<span class="sd">        Twb;                % wetbulb temperature</span>
+<span class="sd">        Tdp;                % dew point</span>
+<span class="sd">        indoorRhum;         % indoor relative humidity</span>
+
+<span class="sd">        area_floor;         % total floor space of the BEM</span>
+<span class="sd">        FanMax;             % max fan flow rate (m^3/s) per DOE</span>
+<span class="sd">        nFloor;             % number of floors</span>
+<span class="sd">        RadFOcc;            % Radiant fraction of occupant</span>
+<span class="sd">        LatFOcc;            % Latent fraction of occupant</span>
+<span class="sd">        RadFEquip;          % Radiant fraction of equipment</span>
+<span class="sd">        RadFLight;          % Radiant fraction of light</span>
+
+<span class="sd">        Type;               % DOE reference building type</span>
+<span class="sd">        Era;                % PRE80, PST80, NEW</span>
+<span class="sd">        Zone;               % Climate zone number</span>
+
+<span class="sd">        % Calculated values</span>
+<span class="sd">        sensCoolDemand;     % building sensible cooling demand (W m-2)</span>
+<span class="sd">        sensHeatDemand;     % building sensible heating demand (W m-2)</span>
+<span class="sd">        copAdj;             % adjusted COP per temperature</span>
+<span class="sd">        dehumDemand;        % dehumidification energy (W m-2)</span>
+<span class="sd">        coolConsump;        % cooling energy consumption (W m-2)</span>
+<span class="sd">        heatConsump;        % heating energy consumption (W m-2)</span>
+<span class="sd">        sensWaste;          % sensible waste heat (W m-2)</span>
+<span class="sd">        latWaste;           % lat waste heat (W m-2)</span>
+<span class="sd">        fluxMass;           % mass surface heat flux (W m-2) (mass to indoor air)</span>
+<span class="sd">        fluxWall;           % wall surface heat flux (W m-2) (wall to inside)</span>
+<span class="sd">        fluxRoof;           % roof surface heat flux (W m-2) (roof to inside)</span>
+<span class="sd">        fluxSolar;          % solar heat gain (W m-2) through window (SHGC)</span>
+<span class="sd">        fluxWindow;         % heat gain/loss from window (U-value)</span>
+<span class="sd">        fluxInterior;       % internal heat gain adjusted for latent/LW heat (W m-2)</span>
+<span class="sd">        fluxInfil;          % heat flux from infiltration (W m-2)</span>
+<span class="sd">        fluxVent;           % heat flux from ventilation (W m-2)</span>
+<span class="sd">        ElecTotal;          % total electricity consumption - (W/m^2) of floor</span>
+<span class="sd">        GasTotal;           % total gas consumption - (W/m^2) of floor</span>
+<span class="sd">        Qhvac;              % total heat removed (sensible + latent)</span>
+<span class="sd">        Qheat;              % total heat added (sensible only)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">TEMPERATURE_COEFFICIENT_CONFLICT_MSG</span> <span class="o">=</span> <span class="s2">&quot;FATAL ERROR! Try reducing the simulation timstep to fix this error.&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">floorHeight</span><span class="p">,</span><span class="n">intHeatNight</span><span class="p">,</span><span class="n">intHeatDay</span><span class="p">,</span><span class="n">intHeatFRad</span><span class="p">,</span>\
+            <span class="n">intHeatFLat</span><span class="p">,</span><span class="n">infil</span><span class="p">,</span><span class="n">vent</span><span class="p">,</span><span class="n">glazingRatio</span><span class="p">,</span><span class="n">uValue</span><span class="p">,</span><span class="n">shgc</span><span class="p">,</span>\
+            <span class="n">condType</span><span class="p">,</span><span class="n">cop</span><span class="p">,</span><span class="n">coolSetpointDay</span><span class="p">,</span><span class="n">coolSetpointNight</span><span class="p">,</span>\
+            <span class="n">heatSetpointDay</span><span class="p">,</span><span class="n">heatSetpointNight</span><span class="p">,</span><span class="n">coolCap</span><span class="p">,</span><span class="n">heatEff</span><span class="p">,</span><span class="n">initialTemp</span><span class="p">):</span>
+
+            <span class="bp">self</span><span class="o">.</span><span class="n">floorHeight</span> <span class="o">=</span><span class="nb">float</span><span class="p">(</span><span class="n">floorHeight</span><span class="p">)</span>        <span class="c1"># floor height</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">intHeat</span> <span class="o">=</span> <span class="n">intHeatNight</span>                 <span class="c1"># timetep internal gains (W m-2 bld) (sensible only)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">intHeatNight</span> <span class="o">=</span> <span class="n">intHeatNight</span>            <span class="c1"># nighttime internal heat gains  (W m-2 floor)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">intHeatDay</span> <span class="o">=</span> <span class="n">intHeatDay</span>                <span class="c1"># daytime internal heat gains  (W m-2 floor)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">intHeatFRad</span> <span class="o">=</span> <span class="n">intHeatFRad</span>              <span class="c1"># internal gain radiant fraction</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">intHeatFLat</span> <span class="o">=</span> <span class="n">intHeatFLat</span>              <span class="c1"># internal gain latent fraction</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">infil</span> <span class="o">=</span> <span class="n">infil</span>                          <span class="c1"># Infiltration (ACH)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">vent</span> <span class="o">=</span> <span class="n">vent</span>                            <span class="c1"># Ventilation (ACH)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">glazingRatio</span> <span class="o">=</span> <span class="n">glazingRatio</span>            <span class="c1"># glazing ratio</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">uValue</span> <span class="o">=</span> <span class="n">uValue</span>                        <span class="c1"># window U-value ( w m-2 K-1) including film coeff</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">shgc</span> <span class="o">=</span> <span class="n">shgc</span>                            <span class="c1"># window SHGC</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">condType</span> <span class="o">=</span> <span class="n">condType</span>                    <span class="c1"># cooling condensation system type: AIR, WATER</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">cop</span> <span class="o">=</span> <span class="n">cop</span>                              <span class="c1"># COP of cooling system (nominal)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">coolSetpointDay</span> <span class="o">=</span> <span class="n">coolSetpointDay</span>      <span class="c1"># daytime indoor cooling setpoint [K]</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">coolSetpointNight</span> <span class="o">=</span> <span class="n">coolSetpointNight</span>  <span class="c1"># nighttime indoor heating setpoint [K]</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">heatSetpointDay</span> <span class="o">=</span> <span class="n">heatSetpointDay</span>      <span class="c1"># daytimge indoor heating setpoint [K]</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">heatSetpointNight</span> <span class="o">=</span> <span class="n">heatSetpointNight</span>  <span class="c1"># nighttime indoor heating setpoint [K]</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">coolCap</span> <span class="o">=</span> <span class="n">coolCap</span>                      <span class="c1"># rated cooling system capacity (W m-2)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">heatEff</span> <span class="o">=</span> <span class="n">heatEff</span>                      <span class="c1"># heating system capacity (-)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">mSys</span> <span class="o">=</span> <span class="n">coolCap</span><span class="o">/</span><span class="mf">1004.</span><span class="o">/</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">coolSetpointDay</span><span class="p">,</span><span class="n">coolSetpointNight</span><span class="p">)</span><span class="o">-</span><span class="mi">14</span><span class="o">-</span><span class="mf">273.15</span><span class="p">)</span> <span class="c1"># HVAC supply mass flowrate (kg s-1 m-2)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">indoorTemp</span> <span class="o">=</span> <span class="n">initialTemp</span>               <span class="c1"># Indoor Air Temperature [K]</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">indoorHum</span> <span class="o">=</span> <span class="mf">0.012</span>                      <span class="c1"># Indoor specific humidity [kgv/kga]</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">heatCap</span> <span class="o">=</span> <span class="mi">999</span>                          <span class="c1"># Default heat capacity value</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">copAdj</span> <span class="o">=</span> <span class="n">cop</span>                           <span class="c1"># adjusted COP per temperature</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">canyon_fraction</span> <span class="o">=</span> <span class="mf">1.0</span>                  <span class="c1"># Default canyon fraction</span>
+
+            <span class="bp">self</span><span class="o">.</span><span class="n">Type</span> <span class="o">=</span> <span class="s2">&quot;null&quot;</span>                          <span class="c1"># DOE reference building type</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">Era</span> <span class="o">=</span> <span class="s2">&quot;null&quot;</span>                           <span class="c1"># pre80, pst80, new</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">Zone</span> <span class="o">=</span> <span class="s2">&quot;null&quot;</span>                          <span class="c1"># Climate zone number</span>
+
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;BuildingType: </span><span class="si">{a}</span><span class="s2">, Era: </span><span class="si">{b}</span><span class="s2">, Zone: </span><span class="si">{c}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+            <span class="n">a</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">Type</span><span class="p">,</span>
+            <span class="n">b</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">Era</span><span class="p">,</span>
+            <span class="n">c</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">Zone</span>
+            <span class="p">)</span>
+
+<div class="viewcode-block" id="Building.is_near_zero"><a class="viewcode-back" href="../../uwg.building.html#uwg.building.Building.is_near_zero">[docs]</a>    <span class="k">def</span> <span class="nf">is_near_zero</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">val</span><span class="p">,</span><span class="n">tol</span><span class="o">=</span><span class="mf">1e-14</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">abs</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">val</span><span class="p">))</span> <span class="o">&lt;</span> <span class="n">tol</span></div>
+
+<div class="viewcode-block" id="Building.BEMCalc"><a class="viewcode-back" href="../../uwg.building.html#uwg.building.Building.BEMCalc">[docs]</a>    <span class="k">def</span> <span class="nf">BEMCalc</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">UCM</span><span class="p">,</span><span class="n">BEM</span><span class="p">,</span><span class="n">forc</span><span class="p">,</span><span class="n">parameter</span><span class="p">,</span><span class="n">simTime</span><span class="p">):</span>
+
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;Logging at </span><span class="si">{}</span><span class="s2"> </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="vm">__name__</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="fm">__repr__</span><span class="p">()))</span>
+
+        <span class="c1"># Building Energy Model</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ElecTotal</span> <span class="o">=</span> <span class="mf">0.0</span>                            <span class="c1"># total electricity consumption - (W/m^2) of floor</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">nFloor</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">UCM</span><span class="o">.</span><span class="n">bldHeight</span><span class="o">/</span><span class="nb">float</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">floorHeight</span><span class="p">),</span><span class="mi">1</span><span class="p">)</span>   <span class="c1"># At least one floor</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Qheat</span> <span class="o">=</span> <span class="mf">0.0</span>                                <span class="c1"># total sensible heat added</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sensCoolDemand</span> <span class="o">=</span> <span class="mf">0.0</span>                       <span class="c1"># building sensible cooling demand (W m-2)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sensHeatDemand</span> <span class="o">=</span> <span class="mf">0.0</span>                       <span class="c1"># building sensible heating demand (W m-2)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">coolConsump</span>  <span class="o">=</span> <span class="mf">0.0</span>                         <span class="c1"># cooling energy consumption (W m-2)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">heatConsump</span>  <span class="o">=</span> <span class="mf">0.0</span>                         <span class="c1"># heating energy consumption (W m-2)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sensWaste</span> <span class="o">=</span> <span class="mf">0.0</span>                            <span class="c1"># Sensible waste heat (W m-2)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">dehumDemand</span>  <span class="o">=</span> <span class="mf">0.0</span>                         <span class="c1"># dehumidification energy (W m-2)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Qhvac</span> <span class="o">=</span> <span class="mf">0.0</span>                                <span class="c1"># Total heat removed (sensible + latent)</span>
+        <span class="n">Qdehum</span> <span class="o">=</span> <span class="mf">0.0</span>
+        <span class="n">dens</span> <span class="o">=</span>  <span class="n">moist_air_density</span><span class="p">(</span><span class="n">forc</span><span class="o">.</span><span class="n">pres</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">indoorTemp</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">indoorHum</span><span class="p">)</span><span class="c1"># [kgv/ m-3] Moist air density given dry bulb temperature, humidity ratio, and pressure</span>
+        <span class="n">evapEff</span> <span class="o">=</span> <span class="mf">1.</span>                                    <span class="c1"># evaporation efficiency in the condenser</span>
+        <span class="n">volVent</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">vent</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">nFloor</span>               <span class="c1"># total vent volumetric flow [m3 s-1]</span>
+        <span class="n">volInfil</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">infil</span> <span class="o">*</span> <span class="n">UCM</span><span class="o">.</span><span class="n">bldHeight</span> <span class="o">/</span> <span class="mf">3600.</span>   <span class="c1"># Change of units AC/H -&gt; [m3 s-1]</span>
+        <span class="n">T_wall</span> <span class="o">=</span> <span class="n">BEM</span><span class="o">.</span><span class="n">wall</span><span class="o">.</span><span class="n">layerTemp</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>                 <span class="c1"># Inner layer</span>
+        <span class="n">volSWH</span> <span class="o">=</span> <span class="n">BEM</span><span class="o">.</span><span class="n">SWH</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">nFloor</span><span class="o">/</span><span class="mf">3600.</span>            <span class="c1"># Change of units l/hr per m^2 -&gt; [L/s]</span>
+        <span class="n">T_ceil</span> <span class="o">=</span> <span class="n">BEM</span><span class="o">.</span><span class="n">roof</span><span class="o">.</span><span class="n">layerTemp</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>                 <span class="c1"># Inner layer</span>
+        <span class="n">T_mass</span> <span class="o">=</span> <span class="n">BEM</span><span class="o">.</span><span class="n">mass</span><span class="o">.</span><span class="n">layerTemp</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>                  <span class="c1"># Outer layer</span>
+        <span class="n">T_indoor</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">indoorTemp</span>                      <span class="c1"># Indoor temp (initial)</span>
+        <span class="n">T_can</span> <span class="o">=</span> <span class="n">UCM</span><span class="o">.</span><span class="n">canTemp</span>                             <span class="c1"># Canyon temperature</span>
+
+        <span class="c1"># Normalize areas to building foot print [m^2/m^2(bld)]</span>
+        <span class="n">facArea</span> <span class="o">=</span> <span class="n">UCM</span><span class="o">.</span><span class="n">verToHor</span><span class="o">/</span><span class="n">UCM</span><span class="o">.</span><span class="n">bldDensity</span>           <span class="c1"># [m2(facade)/m2(bld)]</span>
+        <span class="n">wallArea</span> <span class="o">=</span> <span class="n">facArea</span><span class="o">*</span><span class="p">(</span><span class="mf">1.</span><span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">glazingRatio</span><span class="p">)</span>       <span class="c1"># [m2(wall)/m2(bld)]</span>
+        <span class="n">winArea</span> <span class="o">=</span> <span class="n">facArea</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">glazingRatio</span>             <span class="c1"># [m2(window)/m2(bld)]</span>
+        <span class="n">massArea</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">nFloor</span><span class="o">-</span><span class="mi">1</span>                      <span class="c1"># ceiling/floor (top &amp; bottom)</span>
+
+        <span class="c1"># Set temperature set points according to night/day setpoints in building schedule &amp; simTime hr</span>
+        <span class="n">isEqualNightStart</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_near_zero</span><span class="p">((</span><span class="n">simTime</span><span class="o">.</span><span class="n">secDay</span><span class="o">/</span><span class="mf">3600.</span><span class="p">)</span> <span class="o">-</span> <span class="n">parameter</span><span class="o">.</span><span class="n">nightSetStart</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">simTime</span><span class="o">.</span><span class="n">secDay</span><span class="o">/</span><span class="mf">3600.</span> <span class="o">&lt;</span> <span class="n">parameter</span><span class="o">.</span><span class="n">nightSetEnd</span> <span class="ow">or</span> <span class="p">(</span><span class="n">simTime</span><span class="o">.</span><span class="n">secDay</span><span class="o">/</span><span class="mf">3600.</span> <span class="o">&gt;</span> <span class="n">parameter</span><span class="o">.</span><span class="n">nightSetStart</span> <span class="ow">or</span> <span class="n">isEqualNightStart</span><span class="p">):</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> Night setpoints @</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="vm">__name__</span><span class="p">,</span><span class="n">simTime</span><span class="o">.</span><span class="n">secDay</span><span class="o">/</span><span class="mf">3600.</span><span class="p">))</span>
+
+            <span class="n">T_cool</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">coolSetpointNight</span>
+            <span class="n">T_heat</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">heatSetpointNight</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">intHeat</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">intHeatNight</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">nFloor</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> Day setpoints @</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="vm">__name__</span><span class="p">,</span><span class="n">simTime</span><span class="o">.</span><span class="n">secDay</span><span class="o">/</span><span class="mf">3600.</span><span class="p">))</span>
+
+            <span class="n">T_cool</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">coolSetpointDay</span>
+            <span class="n">T_heat</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">heatSetpointDay</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">intHeat</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">intHeatDay</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">nFloor</span>
+
+        <span class="c1"># Indoor convection heat transfer coefficients</span>
+        <span class="n">zac_in_wall</span> <span class="o">=</span> <span class="mf">3.076</span>                             <span class="c1"># wall heat convection coefficeint</span>
+        <span class="n">zac_in_mass</span> <span class="o">=</span> <span class="mf">3.076</span>                             <span class="c1"># mass heat convection coefficeint</span>
+
+        <span class="c1"># Check that T_ceil and T_indoor within reasonable bounds</span>
+        <span class="n">converge_hi</span> <span class="o">=</span> <span class="mf">100.0</span> <span class="o">+</span> <span class="mf">273.15</span>
+        <span class="n">converge_lo</span> <span class="o">=</span> <span class="o">-</span><span class="mf">50.0</span> <span class="o">+</span> <span class="mf">273.15</span>
+
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">chk_tin</span> <span class="o">=</span> <span class="n">converge_lo</span> <span class="o">&lt;=</span> <span class="n">T_indoor</span> <span class="o">&lt;=</span> <span class="n">converge_hi</span>
+            <span class="n">chk_tce</span> <span class="o">=</span> <span class="n">converge_lo</span> <span class="o">&lt;=</span> <span class="n">T_ceil</span> <span class="o">&lt;=</span> <span class="n">converge_hi</span>
+
+            <span class="k">if</span> <span class="n">chk_tin</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">True</span> <span class="ow">or</span> <span class="n">chk_tce</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">True</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">.</span><span class="se">\n</span><span class="s2"> Error at </span><span class="si">{}</span><span class="s2">/</span><span class="si">{}</span><span class="s2"> </span><span class="si">{}</span><span class="s2">s for bld </span><span class="si">{}</span><span class="s2">.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">TEMPERATURE_COEFFICIENT_CONFLICT_MSG</span><span class="p">,</span> <span class="n">simTime</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="n">simTime</span><span class="o">.</span><span class="n">day</span><span class="p">,</span> <span class="n">simTime</span><span class="o">.</span><span class="n">secDay</span><span class="p">,</span> <span class="n">BEM</span><span class="p">))</span>
+
+        <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">.</span><span class="se">\n</span><span class="s2"> Error at </span><span class="si">{}</span><span class="s2">/</span><span class="si">{}</span><span class="s2"> </span><span class="si">{}</span><span class="s2">s for bld </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">TEMPERATURE_COEFFICIENT_CONFLICT_MSG</span><span class="p">,</span> <span class="n">simTime</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="n">simTime</span><span class="o">.</span><span class="n">day</span><span class="p">,</span> <span class="n">simTime</span><span class="o">.</span><span class="n">secDay</span><span class="p">,</span> <span class="n">BEM</span><span class="p">))</span>
+
+        <span class="c1"># If temperature is reasonable assign coefficients</span>
+        <span class="k">if</span> <span class="n">T_ceil</span> <span class="o">&gt;</span> <span class="n">T_indoor</span><span class="p">:</span>                               <span class="c1"># set higher ceiling heat convection coefficient</span>
+            <span class="n">zac_in_ceil</span>  <span class="o">=</span> <span class="mf">0.948</span>                            <span class="c1"># - based on heat is higher on ceiling</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">zac_in_ceil</span>  <span class="o">=</span> <span class="mf">4.040</span>
+
+        <span class="c1"># -------------------------------------------------------------</span>
+        <span class="c1"># Heat fluxes (per m^2 of bld footprint)</span>
+        <span class="c1"># -------------------------------------------------------------</span>
+        <span class="c1"># Solar Heat Gain: solar radiation received (W m-2) * area * SHGC</span>
+        <span class="n">winTrans</span> <span class="o">=</span> <span class="p">(</span><span class="n">BEM</span><span class="o">.</span><span class="n">wall</span><span class="o">.</span><span class="n">solRec</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">shgc</span> <span class="o">*</span> <span class="n">winArea</span><span class="p">)</span>
+
+        <span class="c1"># Latent heat infiltration &amp; ventilation (W/m^2 of bld footprint) from</span>
+        <span class="c1"># volInfil/volVent: [m3 s-1 m-2 (bld/facade#)]</span>
+        <span class="c1"># parameter.lv: latent heat of evaporation [J kgv-1]</span>
+        <span class="c1"># dens: kga m-3</span>
+        <span class="c1"># UCM.canHum: canyon specific humidity (kgv kga-1)</span>
+        <span class="c1"># indoorHum: indoor kv kga-1</span>
+        <span class="c1"># QL = W m-2</span>
+
+        <span class="n">QLinfil</span> <span class="o">=</span> <span class="n">volInfil</span> <span class="o">*</span> <span class="n">dens</span> <span class="o">*</span> <span class="n">parameter</span><span class="o">.</span><span class="n">lv</span> <span class="o">*</span> <span class="p">(</span><span class="n">UCM</span><span class="o">.</span><span class="n">canHum</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">indoorHum</span><span class="p">)</span>
+        <span class="n">QLvent</span> <span class="o">=</span> <span class="n">volVent</span> <span class="o">*</span> <span class="n">dens</span> <span class="o">*</span> <span class="n">parameter</span><span class="o">.</span><span class="n">lv</span> <span class="o">*</span> <span class="p">(</span><span class="n">UCM</span><span class="o">.</span><span class="n">canHum</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">indoorHum</span><span class="p">)</span>
+        <span class="n">QLintload</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">intHeat</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">intHeatFLat</span> <span class="c1"># Qlatent Internal load = timestep internal gain * internal gain latent fraction</span>
+
+        <span class="c1"># Heat/Cooling load (W/m^2 of bld footprint), if any</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sensCoolDemand</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span>
+            <span class="n">wallArea</span><span class="o">*</span><span class="n">zac_in_wall</span><span class="o">*</span><span class="p">(</span><span class="n">T_wall</span> <span class="o">-</span> <span class="n">T_cool</span><span class="p">)</span> <span class="o">+</span>            <span class="c1"># wall load</span>
+            <span class="n">massArea</span><span class="o">*</span><span class="n">zac_in_mass</span><span class="o">*</span><span class="p">(</span><span class="n">T_mass</span><span class="o">-</span><span class="n">T_cool</span><span class="p">)</span> <span class="o">+</span>              <span class="c1"># mass load</span>
+            <span class="n">winArea</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">uValue</span><span class="o">*</span><span class="p">(</span><span class="n">T_can</span><span class="o">-</span><span class="n">T_cool</span><span class="p">)</span> <span class="o">+</span>                <span class="c1"># window load due to temp delta</span>
+            <span class="n">zac_in_ceil</span> <span class="o">*</span><span class="p">(</span><span class="n">T_ceil</span><span class="o">-</span><span class="n">T_cool</span><span class="p">)</span> <span class="o">+</span>                      <span class="c1"># ceiling load</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">intHeat</span> <span class="o">+</span>                                      <span class="c1"># internal load</span>
+            <span class="n">volInfil</span><span class="o">*</span><span class="n">dens</span><span class="o">*</span><span class="n">parameter</span><span class="o">.</span><span class="n">cp</span><span class="o">*</span><span class="p">(</span><span class="n">T_can</span><span class="o">-</span><span class="n">T_cool</span><span class="p">)</span> <span class="o">+</span>         <span class="c1"># infiltration load (volInfil = m3 s-1)</span>
+            <span class="n">volVent</span><span class="o">*</span><span class="n">dens</span><span class="o">*</span><span class="n">parameter</span><span class="o">.</span><span class="n">cp</span><span class="o">*</span><span class="p">(</span><span class="n">T_can</span><span class="o">-</span><span class="n">T_cool</span><span class="p">)</span> <span class="o">+</span>          <span class="c1"># ventilation load (volVent = m3 s-1)</span>
+            <span class="n">winTrans</span><span class="p">,</span>                                           <span class="c1"># solar load through window</span>
+            <span class="mf">0.</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">sensHeatDemand</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span>
+            <span class="o">-</span><span class="p">(</span><span class="n">wallArea</span><span class="o">*</span><span class="n">zac_in_wall</span><span class="o">*</span><span class="p">(</span><span class="n">T_wall</span><span class="o">-</span><span class="n">T_heat</span><span class="p">)</span> <span class="o">+</span>            <span class="c1"># wall load</span>
+            <span class="n">massArea</span><span class="o">*</span><span class="n">zac_in_mass</span><span class="o">*</span><span class="p">(</span><span class="n">T_mass</span><span class="o">-</span><span class="n">T_heat</span><span class="p">)</span> <span class="o">+</span>              <span class="c1"># mass load</span>
+            <span class="n">winArea</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">uValue</span><span class="o">*</span><span class="p">(</span><span class="n">T_can</span><span class="o">-</span><span class="n">T_heat</span><span class="p">)</span> <span class="o">+</span>                <span class="c1"># window load due to temp delta</span>
+            <span class="n">zac_in_ceil</span><span class="o">*</span><span class="p">(</span><span class="n">T_ceil</span><span class="o">-</span><span class="n">T_heat</span><span class="p">)</span> <span class="o">+</span>                       <span class="c1"># ceiling load</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">intHeat</span> <span class="o">+</span>                                      <span class="c1"># internal load</span>
+            <span class="n">volInfil</span><span class="o">*</span><span class="n">dens</span><span class="o">*</span><span class="n">parameter</span><span class="o">.</span><span class="n">cp</span><span class="o">*</span><span class="p">(</span><span class="n">T_can</span><span class="o">-</span><span class="n">T_heat</span><span class="p">)</span> <span class="o">+</span>         <span class="c1"># infiltration load (volInfil = m3 s-1)</span>
+            <span class="n">volVent</span><span class="o">*</span><span class="n">dens</span><span class="o">*</span><span class="n">parameter</span><span class="o">.</span><span class="n">cp</span><span class="o">*</span><span class="p">(</span><span class="n">T_can</span><span class="o">-</span><span class="n">T_heat</span><span class="p">)</span> <span class="o">+</span>          <span class="c1"># ventilation load (volVent = m3 s-1)</span>
+            <span class="n">winTrans</span><span class="p">),</span>                                          <span class="c1"># solar load through window</span>
+            <span class="mf">0.</span><span class="p">)</span>
+
+        <span class="c1"># -------------------------------------------------------------</span>
+        <span class="c1"># HVAC system (cooling demand = W/m^2 bld footprint)</span>
+        <span class="c1"># -------------------------------------------------------------</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">sensCoolDemand</span> <span class="o">&gt;</span> <span class="mf">0.</span> <span class="ow">and</span> <span class="n">UCM</span><span class="o">.</span><span class="n">canTemp</span> <span class="o">&gt;</span> <span class="mf">288.</span><span class="p">:</span>
+            <span class="c1"># Cooling energy is the equivalent energy to bring a vol</span>
+            <span class="c1"># where sensCoolDemand = dens * Cp * x * (T_indoor - 10C) &amp;</span>
+            <span class="c1"># given 7.8g/kg of air at 10C, assume 7g/kg of air</span>
+            <span class="c1"># dehumDemand = x * dens * (self.indoorHum -</span>
+            <span class="c1"># 0.9*0.0078)*parameter.lv</span>
+            <span class="n">VolCool</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sensCoolDemand</span> <span class="o">/</span> <span class="p">(</span><span class="n">dens</span><span class="o">*</span><span class="n">parameter</span><span class="o">.</span><span class="n">cp</span><span class="o">*</span><span class="p">(</span><span class="n">T_indoor</span><span class="o">-</span><span class="mf">283.15</span><span class="p">))</span> <span class="c1"># m3</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">dehumDemand</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">VolCool</span> <span class="o">*</span> <span class="n">dens</span> <span class="o">*</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">indoorHum</span> <span class="o">-</span> <span class="mf">0.9</span><span class="o">*</span><span class="mf">0.0078</span><span class="p">)</span><span class="o">*</span><span class="n">parameter</span><span class="o">.</span><span class="n">lv</span><span class="p">,</span> <span class="mf">0.</span><span class="p">)</span>
+            <span class="k">if</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dehumDemand</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">sensCoolDemand</span><span class="p">)</span> <span class="o">&gt;</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">coolCap</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">nFloor</span><span class="p">):</span> <span class="c1"># if cooling demand greater then hvac cooling capacity</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">Qhvac</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">coolCap</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">nFloor</span>
+                <span class="n">VolCool</span> <span class="o">=</span> <span class="n">VolCool</span> <span class="o">/</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dehumDemand</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">sensCoolDemand</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">coolCap</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">nFloor</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">sensCoolDemand</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sensCoolDemand</span> <span class="o">*</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">coolCap</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">nFloor</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dehumDemand</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">sensCoolDemand</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">dehumDemand</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">dehumDemand</span> <span class="o">*</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">coolCap</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">nFloor</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dehumDemand</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">sensCoolDemand</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">Qhvac</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">dehumDemand</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">sensCoolDemand</span>
+
+            <span class="n">Qdehum</span> <span class="o">=</span> <span class="n">VolCool</span> <span class="o">*</span> <span class="n">dens</span> <span class="o">*</span> <span class="n">parameter</span><span class="o">.</span><span class="n">lv</span> <span class="o">*</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">indoorHum</span> <span class="o">-</span> <span class="mf">0.9</span><span class="o">*</span><span class="mf">0.0078</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">coolConsump</span> <span class="o">=</span> <span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">sensCoolDemand</span><span class="o">+</span><span class="bp">self</span><span class="o">.</span><span class="n">dehumDemand</span><span class="p">,</span><span class="mf">0.0</span><span class="p">))</span><span class="o">/</span><span class="bp">self</span><span class="o">.</span><span class="n">copAdj</span>
+
+            <span class="c1"># Waste heat from HVAC (per m^2 building foot print)</span>
+            <span class="k">if</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">condType</span> <span class="o">==</span> <span class="s1">&#39;AIR&#39;</span><span class="p">):</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">sensWaste</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">sensCoolDemand</span><span class="o">+</span><span class="bp">self</span><span class="o">.</span><span class="n">dehumDemand</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span><span class="o">+</span><span class="bp">self</span><span class="o">.</span><span class="n">coolConsump</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">latWaste</span> <span class="o">=</span> <span class="mf">0.0</span>
+            <span class="k">elif</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">condType</span> <span class="o">==</span> <span class="s1">&#39;WAT&#39;</span><span class="p">):</span> <span class="c1"># Not sure if this works well</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">sensWaste</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">sensCoolDemand</span><span class="o">+</span><span class="bp">self</span><span class="o">.</span><span class="n">dehumDemand</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span><span class="o">+</span><span class="bp">self</span><span class="o">.</span><span class="n">coolConsump</span><span class="o">*</span><span class="p">(</span><span class="mf">1.</span><span class="o">-</span><span class="n">evapEff</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">latWaste</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">sensCoolDemand</span><span class="o">+</span><span class="bp">self</span><span class="o">.</span><span class="n">dehumDemand</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span><span class="o">+</span><span class="bp">self</span><span class="o">.</span><span class="n">coolConsump</span><span class="o">*</span><span class="n">evapEff</span>
+
+            <span class="bp">self</span><span class="o">.</span><span class="n">sensHeatDemand</span> <span class="o">=</span> <span class="mf">0.</span>
+
+        <span class="c1"># -------------------------------------------------------------</span>
+        <span class="c1"># HVAC system (heating demand = W/m^2 bld footprint)</span>
+        <span class="c1"># -------------------------------------------------------------</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">sensHeatDemand</span> <span class="o">&gt;</span> <span class="mf">0.</span> <span class="ow">and</span> <span class="n">UCM</span><span class="o">.</span><span class="n">canTemp</span> <span class="o">&lt;</span> <span class="mf">288.</span><span class="p">:</span>
+            <span class="c1"># limit on heating capacity</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">Qheat</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">sensHeatDemand</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">heatCap</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">nFloor</span><span class="p">)</span>
+
+            <span class="bp">self</span><span class="o">.</span><span class="n">heatConsump</span>  <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">Qheat</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">heatEff</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">sensWaste</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">heatConsump</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">Qheat</span>         <span class="c1"># waste per footprint</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">heatConsump</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">heatConsump</span><span class="o">/</span><span class="bp">self</span><span class="o">.</span><span class="n">nFloor</span>        <span class="c1"># adjust to be per floor area</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">sensHeatDemand</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">Qheat</span><span class="o">/</span><span class="bp">self</span><span class="o">.</span><span class="n">nFloor</span>           <span class="c1"># adjust to be per floor area</span>
+            <span class="n">Qdehum</span> <span class="o">=</span> <span class="mf">0.0</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">sensCoolDemand</span> <span class="o">=</span> <span class="mf">0.0</span>
+
+
+        <span class="c1"># -------------------------------------------------------------</span>
+        <span class="c1"># Evolution of the internal temperature and humidity</span>
+        <span class="c1"># -------------------------------------------------------------</span>
+        <span class="c1"># wall, mass, roof, intload, infil, vent, hvac, heat, window</span>
+
+        <span class="n">Q</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">intHeat</span> <span class="o">+</span> <span class="n">winTrans</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">Qheat</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">sensCoolDemand</span>
+
+        <span class="n">H1</span> <span class="o">=</span> <span class="p">(</span><span class="n">T_wall</span><span class="o">*</span><span class="n">wallArea</span><span class="o">*</span><span class="n">zac_in_wall</span> <span class="o">+</span>
+            <span class="n">T_mass</span><span class="o">*</span><span class="n">massArea</span><span class="o">*</span><span class="n">zac_in_mass</span> <span class="o">+</span>
+            <span class="n">T_ceil</span><span class="o">*</span><span class="n">zac_in_ceil</span> <span class="o">+</span>
+            <span class="n">T_can</span><span class="o">*</span><span class="n">winArea</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">uValue</span> <span class="o">+</span>
+            <span class="n">T_can</span><span class="o">*</span><span class="n">volInfil</span> <span class="o">*</span> <span class="n">dens</span> <span class="o">*</span> <span class="n">parameter</span><span class="o">.</span><span class="n">cp</span> <span class="o">+</span>
+            <span class="n">T_can</span><span class="o">*</span><span class="n">volVent</span> <span class="o">*</span> <span class="n">dens</span> <span class="o">*</span> <span class="n">parameter</span><span class="o">.</span><span class="n">cp</span><span class="p">)</span>
+
+        <span class="n">H2</span> <span class="o">=</span> <span class="p">(</span><span class="n">wallArea</span><span class="o">*</span><span class="n">zac_in_wall</span> <span class="o">+</span>
+            <span class="n">massArea</span><span class="o">*</span><span class="n">zac_in_mass</span> <span class="o">+</span>
+            <span class="n">zac_in_ceil</span> <span class="o">+</span>
+            <span class="n">winArea</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">uValue</span> <span class="o">+</span>
+            <span class="n">volInfil</span> <span class="o">*</span> <span class="n">dens</span> <span class="o">*</span> <span class="n">parameter</span><span class="o">.</span><span class="n">cp</span> <span class="o">+</span>
+            <span class="n">volVent</span> <span class="o">*</span> <span class="n">dens</span> <span class="o">*</span> <span class="n">parameter</span><span class="o">.</span><span class="n">cp</span><span class="p">)</span>
+
+        <span class="c1"># Assumes air temperature of control volume is sum of surface boundary temperatures</span>
+        <span class="c1"># weighted by area and heat transfer coefficient + generated heat</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">indoorTemp</span> <span class="o">=</span> <span class="p">(</span><span class="n">H1</span> <span class="o">+</span> <span class="n">Q</span><span class="p">)</span><span class="o">/</span><span class="n">H2</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">indoorHum</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">indoorHum</span> <span class="o">+</span> <span class="p">(</span><span class="n">simTime</span><span class="o">.</span><span class="n">dt</span><span class="o">/</span><span class="p">(</span><span class="n">dens</span> <span class="o">*</span> <span class="n">parameter</span><span class="o">.</span><span class="n">lv</span> <span class="o">*</span> <span class="n">UCM</span><span class="o">.</span><span class="n">bldHeight</span><span class="p">))</span> <span class="o">*</span> \
+            <span class="p">(</span><span class="n">QLintload</span> <span class="o">+</span> <span class="n">QLinfil</span> <span class="o">+</span> <span class="n">QLvent</span> <span class="o">-</span> <span class="n">Qdehum</span><span class="p">)</span>
+
+        <span class="c1"># Calculate relative humidity (Pw/Pws*100) using pressurce, indoor temperature, humidity</span>
+        <span class="n">_Tdb</span><span class="p">,</span> <span class="n">_w</span><span class="p">,</span> <span class="n">_phi</span><span class="p">,</span> <span class="n">_h</span><span class="p">,</span> <span class="n">_Tdp</span><span class="p">,</span> <span class="n">_v</span> <span class="o">=</span> <span class="n">psychrometrics</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">indoorTemp</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">indoorHum</span><span class="p">,</span> <span class="n">forc</span><span class="o">.</span><span class="n">pres</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">indoorRhum</span> <span class="o">=</span> <span class="n">_phi</span>
+
+        <span class="c1"># These are used for element calculation (per m^2 of element area)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fluxWall</span> <span class="o">=</span> <span class="n">zac_in_wall</span> <span class="o">*</span> <span class="p">(</span><span class="n">T_indoor</span> <span class="o">-</span> <span class="n">T_wall</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fluxRoof</span> <span class="o">=</span> <span class="n">zac_in_ceil</span> <span class="o">*</span> <span class="p">(</span><span class="n">T_indoor</span> <span class="o">-</span> <span class="n">T_ceil</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fluxMass</span> <span class="o">=</span> <span class="n">zac_in_mass</span> <span class="o">*</span> <span class="p">(</span><span class="n">T_indoor</span> <span class="o">-</span> <span class="n">T_mass</span><span class="p">)</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">intHeat</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">intHeatFRad</span><span class="o">/</span><span class="n">massArea</span>
+
+        <span class="c1"># These are for record keeping only, per m^2 of floor area (W m-2)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fluxSolar</span> <span class="o">=</span> <span class="n">winTrans</span><span class="o">/</span><span class="bp">self</span><span class="o">.</span><span class="n">nFloor</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fluxWindow</span> <span class="o">=</span> <span class="n">winArea</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">uValue</span> <span class="o">*</span><span class="p">(</span><span class="n">T_can</span> <span class="o">-</span> <span class="n">T_indoor</span><span class="p">)</span><span class="o">/</span><span class="bp">self</span><span class="o">.</span><span class="n">nFloor</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fluxInterior</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">intHeat</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">intHeatFRad</span> <span class="o">*</span><span class="p">(</span><span class="mf">1.</span><span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">intHeatFLat</span><span class="p">)</span><span class="o">/</span><span class="bp">self</span><span class="o">.</span><span class="n">nFloor</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fluxInfil</span><span class="o">=</span> <span class="n">volInfil</span> <span class="o">*</span> <span class="n">dens</span> <span class="o">*</span> <span class="n">parameter</span><span class="o">.</span><span class="n">cp</span> <span class="o">*</span><span class="p">(</span><span class="n">T_can</span> <span class="o">-</span> <span class="n">T_indoor</span><span class="p">)</span><span class="o">/</span><span class="bp">self</span><span class="o">.</span><span class="n">nFloor</span> <span class="c1"># volInfil = m3 s-1</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fluxVent</span> <span class="o">=</span> <span class="n">volVent</span> <span class="o">*</span> <span class="n">dens</span> <span class="o">*</span> <span class="n">parameter</span><span class="o">.</span><span class="n">cp</span> <span class="o">*</span><span class="p">(</span><span class="n">T_can</span> <span class="o">-</span> <span class="n">T_indoor</span><span class="p">)</span><span class="o">/</span><span class="bp">self</span><span class="o">.</span><span class="n">nFloor</span>  <span class="c1"># volVent = m3 s-1</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">coolConsump</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">coolConsump</span><span class="o">/</span><span class="bp">self</span><span class="o">.</span><span class="n">nFloor</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sensCoolDemand</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sensCoolDemand</span><span class="o">/</span><span class="bp">self</span><span class="o">.</span><span class="n">nFloor</span>
+
+        <span class="c1"># Total Electricity/building floor area (W/m^2)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ElecTotal</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">coolConsump</span> <span class="o">+</span> <span class="n">BEM</span><span class="o">.</span><span class="n">Elec</span> <span class="o">+</span> <span class="n">BEM</span><span class="o">.</span><span class="n">Light</span>
+
+        <span class="c1"># Waste heat to canyon, W/m^2 of building + water</span>
+        <span class="n">CpH20</span> <span class="o">=</span> <span class="mf">4200.</span>           <span class="c1"># heat capacity of water</span>
+        <span class="n">T_hot</span> <span class="o">=</span> <span class="mi">49</span> <span class="o">+</span> <span class="mf">273.15</span>     <span class="c1"># Service water temp (assume no storage)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sensWaste</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sensWaste</span> <span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="bp">self</span><span class="o">.</span><span class="n">heatEff</span><span class="o">-</span><span class="mf">1.</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">volSWH</span><span class="o">*</span><span class="n">CpH20</span><span class="o">*</span><span class="p">(</span><span class="n">T_hot</span> <span class="o">-</span> <span class="n">forc</span><span class="o">.</span><span class="n">waterTemp</span><span class="p">))</span> <span class="o">+</span> <span class="n">BEM</span><span class="o">.</span><span class="n">Gas</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">heatEff</span><span class="p">)</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">nFloor</span>
+
+        <span class="c1"># Gas equip per floor + water usage per floor + heating/floor</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">GasTotal</span> <span class="o">=</span> <span class="n">BEM</span><span class="o">.</span><span class="n">Gas</span> <span class="o">+</span> <span class="n">volSWH</span><span class="o">*</span><span class="n">CpH20</span><span class="o">*</span><span class="p">(</span><span class="n">T_hot</span> <span class="o">-</span> <span class="n">forc</span><span class="o">.</span><span class="n">waterTemp</span><span class="p">)</span><span class="o">/</span><span class="bp">self</span><span class="o">.</span><span class="n">nFloor</span><span class="o">/</span><span class="bp">self</span><span class="o">.</span><span class="n">heatEff</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">heatConsump</span></div></div>
+
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">% Not used for this release but saved for possible future use</span>
+<span class="sd">function Twb = wet_bulb(Tdb,Tdp,pres)</span>
+
+<span class="sd">    % Copyright (c) 2015, Rolf Henry Goodwin</span>
+<span class="sd">    % All rights reserved.</span>
+<span class="sd">    %</span>
+<span class="sd">    % Redistribution and use in source and binary forms, with or without</span>
+<span class="sd">    % modification, are permitted provided that the following conditions are</span>
+<span class="sd">    % met:</span>
+<span class="sd">    %</span>
+<span class="sd">    %     * Redistributions of source code must retain the above copyright</span>
+<span class="sd">    %       notice, this list of conditions and the following disclaimer.</span>
+<span class="sd">    %     * Redistributions in binary form must reproduce the above copyright</span>
+<span class="sd">    %       notice, this list of conditions and the following disclaimer in</span>
+<span class="sd">    %       the documentation and/or other materials provided with the distribution</span>
+<span class="sd">    %</span>
+<span class="sd">    % THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot;</span>
+<span class="sd">    % AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE</span>
+<span class="sd">    % IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE</span>
+<span class="sd">    % ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE</span>
+<span class="sd">    % LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR</span>
+<span class="sd">    % CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF</span>
+<span class="sd">    % SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS</span>
+<span class="sd">    % INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN</span>
+<span class="sd">    % CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)</span>
+<span class="sd">    % ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE</span>
+<span class="sd">    % POSSIBILITY OF SUCH DAMAGE.</span>
+
+<span class="sd">    % Code modified to merge into a single file - Joseph Yang, 2016</span>
+
+
+<span class="sd">    % Tdb, Tdp, Twb in K</span>
+<span class="sd">    % p in Pa (obtained function uses hPa, so /100 needed)</span>
+<span class="sd">    global T;</span>
+<span class="sd">    global T_d;</span>
+<span class="sd">    global p;</span>
+<span class="sd">    T = Tdb;</span>
+<span class="sd">    T_d = Tdp;</span>
+<span class="sd">    p = pres/100;</span>
+
+<span class="sd">    Twb = root_finder(@Delta_q,T_d,T);</span>
+<span class="sd">end</span>
+
+<span class="sd">function dQTw = Delta_q(T_w)</span>
+<span class="sd">    %Delta_q finds the value of function dq(Tw)</span>
+<span class="sd">    %INPUT wet bulb temperature T_w</span>
+<span class="sd">    %OUTPUT dq(Tw)</span>
+<span class="sd">    global T;</span>
+<span class="sd">    global T_d;</span>
+<span class="sd">    global p;</span>
+
+<span class="sd">    Cp = 1005; % Heat capacity of water vapor in J/(kg*K)</span>
+<span class="sd">    L = 2.501e6; % Latent heat of water vapor at 0 degC in J/kg</span>
+<span class="sd">    w1 = mixing_ratio(T_d,p); % Mixing ratio corresponding to T_d and p</span>
+<span class="sd">    w2 = mixing_ratio(T_w,p); % Mixing ratio corresponding to T_w and p</span>
+
+<span class="sd">    dQTw = (L*(w2-w1))/(1+w2)-Cp*(T-T_w)*(1+0.8*w2); % Finds deltaq(Tw)</span>
+
+<span class="sd">end</span>
+
+<span class="sd">function r = root_finder(f,a,b)</span>
+<span class="sd">    %root_finder calculates the roots of function f using the bisection search</span>
+<span class="sd">    %method</span>
+<span class="sd">    %INPUT function f, and interval a,b with the property that f(a) and f(b)</span>
+<span class="sd">    %have opposite signs</span>
+<span class="sd">    %OUTPUT r approximate value of root of f in interval [a,b]</span>
+<span class="sd">    if (feval(f,a)*feval(f,b)) &gt; 0</span>
+<span class="sd">        disp(&#39;stop&#39;);</span>
+<span class="sd">        error(&#39;Both endpoints have the same sign, please try again.&#39;)</span>
+
+<span class="sd">    end</span>
+
+<span class="sd">    while abs(b-a)&gt;(10e-10)</span>
+<span class="sd">        m = (a+b)/2;</span>
+<span class="sd">        x1 = feval(f,m);</span>
+<span class="sd">        x2 = feval(f,a);</span>
+<span class="sd">        if (x1 &gt; 0 &amp;&amp; x2 &lt; 0) || (x1 &lt; 0 &amp;&amp; x2 &gt; 0)</span>
+<span class="sd">            b = m;</span>
+<span class="sd">        else</span>
+<span class="sd">            a = m;</span>
+<span class="sd">        end</span>
+<span class="sd">    end</span>
+<span class="sd">    r = (a+b)/2;</span>
+<span class="sd">end</span>
+
+<span class="sd">function w = mixing_ratio(T,p)</span>
+<span class="sd">    %mixing_ratio finds the ratio of water vapor to the mass of dry air</span>
+<span class="sd">    %INPUT Temperature and Pressure</span>
+<span class="sd">    %OUTPUT MIXING RATIOs for inputting into wet_bulb.m</span>
+<span class="sd">    p_a = 1013.246; % Standard sea-level atmospheric pressure in hPa</span>
+<span class="sd">    T_a = 373.16; % Standard sea-level atmospheric temperature in Kelvin</span>
+
+<span class="sd">    e1 = 11.344*(1-T/T_a);</span>
+<span class="sd">    e2 = -3.49149*(T_a/T-1);</span>
+<span class="sd">    f1 = -7.90298*(T_a/T-1);</span>
+<span class="sd">    f2 = 5.02808*logn((T_a/T),10);</span>
+<span class="sd">    f3 = -1.3816*((10^(e1)-1)/(1.e7));</span>
+<span class="sd">    f4 = 8.1328*((10^(e2)-1)/(1.e3));</span>
+<span class="sd">    f5 = logn(p_a,10);</span>
+<span class="sd">    f = f1+f2+f3+f4+f5;</span>
+<span class="sd">    e = 10^(f); % calculates vapor pressure in terms of T</span>
+<span class="sd">    w = 0.62197*(e/(p-e)); % mass ratio g/kg</span>
+<span class="sd">end</span>
+
+<span class="sd">function [ z ] = logn(x,y)</span>
+<span class="sd">    % logn</span>
+<span class="sd">    %   Finds log base y of x</span>
+<span class="sd">    z = log(x)/log(y);</span>
+<span class="sd">end</span>
+<span class="sd">&quot;&quot;&quot;</span>
+</pre></div>
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.2.1.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

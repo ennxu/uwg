@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>uwg.psychrometrics &#8212; uwg  documentation</title>
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../index.html">
+          uwg</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../uwg.html">uwg package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../uwg.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.cli.html">uwg.cli package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../uwg.cli.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../uwg.cli.validate.html">uwg.cli.validate module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../uwg.cli.html#module-uwg.cli">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../uwg.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.BEMDef.html">uwg.BEMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.RSMDef.html">uwg.RSMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.UBLDef.html">uwg.UBLDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.UCMDef.html">uwg.UCMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.building.html">uwg.building module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.element.html">uwg.element module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.forcing.html">uwg.forcing module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.infracalcs.html">uwg.infracalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.material.html">uwg.material module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.param.html">uwg.param module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.psychrometrics.html">uwg.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.readDOE.html">uwg.readDOE module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.schdef.html">uwg.schdef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.simparam.html">uwg.simparam module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.solarcalcs.html">uwg.solarcalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.urbflux.html">uwg.urbflux module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.utilities.html">uwg.utilities module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.uwg.html">uwg.uwg module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.weather.html">uwg.weather module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../uwg.html#module-uwg">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../uwg.html">uwg package</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../uwg.html">uwg package</a></li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <h1>Source code for uwg.psychrometrics</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">division</span>
+
+<span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">log</span><span class="p">,</span> <span class="nb">pow</span><span class="p">,</span> <span class="n">exp</span>
+
+
+<div class="viewcode-block" id="psychrometrics"><a class="viewcode-back" href="../../uwg.psychrometrics.html#uwg.psychrometrics.psychrometrics">[docs]</a><span class="k">def</span> <span class="nf">psychrometrics</span> <span class="p">(</span><span class="n">Tdb_in</span><span class="p">,</span> <span class="n">w_in</span><span class="p">,</span> <span class="n">P</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Modified version of Psychometrics by Tea Zakula</span>
+<span class="sd">    MIT Building Technology Lab</span>
+<span class="sd">    Input: Tdb_in, w_in, P</span>
+<span class="sd">    Output: Tdb, w, phi, h, Tdp, v</span>
+
+<span class="sd">    where:</span>
+<span class="sd">    Tdb_in = [K] dry bulb temperature</span>
+<span class="sd">    w_in = [kgv/kgda] Humidity Ratio</span>
+<span class="sd">    P = [P] Atmospheric Station Pressure</span>
+
+<span class="sd">    Tdb: [C] dry bulb temperature</span>
+<span class="sd">    w: [kgv/kgda] Humidity Ratio</span>
+<span class="sd">    phi: [Pw/Pws*100] relative humidity</span>
+<span class="sd">    Tdp: [C] dew point temperature</span>
+<span class="sd">    h: [J/kga] enthalpy</span>
+<span class="sd">    v: [m3/kga] specific volume</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Change units</span>
+    <span class="n">c_air</span> <span class="o">=</span> <span class="mf">1006.</span>   <span class="c1"># [J/kg] air heat capacity, value from ASHRAE Fundamentals</span>
+    <span class="n">hlg</span> <span class="o">=</span> <span class="mf">2501000.</span>  <span class="c1"># [J/kg] latent heat, value from ASHRAE Fundamentals</span>
+    <span class="n">cw</span>  <span class="o">=</span> <span class="mf">1860.</span>     <span class="c1"># [J/kg] value from ASHRAE Fundamentals</span>
+    <span class="n">P</span> <span class="o">=</span> <span class="n">P</span><span class="o">/</span><span class="mf">1000.</span>     <span class="c1"># convert from Pa to kPa</span>
+
+    <span class="n">Tdb</span> <span class="o">=</span> <span class="n">Tdb_in</span> <span class="o">-</span> <span class="mf">273.15</span>
+    <span class="n">w</span> <span class="o">=</span> <span class="n">w_in</span>
+
+    <span class="c1"># phi (RH) calculation from Tdb and w</span>
+    <span class="n">Pw</span> <span class="o">=</span> <span class="p">(</span><span class="n">w</span><span class="o">*</span><span class="n">P</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mf">0.621945</span> <span class="o">+</span> <span class="n">w</span><span class="p">)</span>                             <span class="c1"># partial pressure of water vapor</span>
+    <span class="n">Pws</span> <span class="o">=</span> <span class="n">saturation_pressure</span><span class="p">(</span><span class="n">Tdb</span><span class="p">)</span>                        <span class="c1"># Get saturation pressure for given Tdb</span>
+    <span class="n">phi</span> <span class="o">=</span> <span class="n">Pw</span><span class="o">/</span><span class="n">Pws</span><span class="o">*</span><span class="mf">100.0</span>
+
+    <span class="c1"># enthalpy calculation from Tdb and w</span>
+    <span class="n">h</span> <span class="o">=</span> <span class="n">c_air</span><span class="o">*</span><span class="n">Tdb</span> <span class="o">+</span> <span class="n">w</span><span class="o">*</span><span class="p">(</span><span class="n">hlg</span><span class="o">+</span><span class="n">cw</span><span class="o">*</span><span class="n">Tdb</span><span class="p">)</span>                      <span class="c1"># [J kga-1]</span>
+
+    <span class="c1"># specific volume calculation from Tdb and w</span>
+    <span class="n">v</span> <span class="o">=</span> <span class="mf">0.287042</span> <span class="o">*</span> <span class="p">(</span><span class="n">Tdb</span><span class="o">+</span><span class="mf">273.15</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="mf">1.607858</span><span class="o">*</span><span class="n">w</span><span class="p">)</span><span class="o">/</span><span class="n">P</span>        <span class="c1"># ?</span>
+
+    <span class="c1"># dew point calculation from w</span>
+    <span class="n">_pw</span> <span class="o">=</span> <span class="p">(</span><span class="n">w</span><span class="o">*</span><span class="n">P</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mf">0.621945</span> <span class="o">+</span> <span class="n">w</span><span class="p">)</span> <span class="c1"># water vapor partial pressure in kPa</span>
+    <span class="n">alpha</span> <span class="o">=</span> <span class="n">log</span><span class="p">(</span><span class="n">_pw</span><span class="p">)</span>
+
+    <span class="n">Tdp</span> <span class="o">=</span> <span class="mf">6.54</span> <span class="o">+</span> <span class="mf">14.526</span><span class="o">*</span><span class="n">alpha</span> <span class="o">+</span> <span class="nb">pow</span><span class="p">(</span><span class="n">alpha</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="mf">0.7389</span> <span class="o">+</span> <span class="nb">pow</span><span class="p">(</span><span class="n">alpha</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span><span class="o">*</span><span class="mf">0.09486</span> <span class="o">+</span> <span class="nb">pow</span><span class="p">(</span><span class="n">_pw</span><span class="p">,</span><span class="mf">0.1984</span><span class="p">)</span><span class="o">*</span><span class="mf">0.4569</span>  <span class="c1"># valid for Tdp between 0 C and 93 C</span>
+
+    <span class="k">return</span>  <span class="n">Tdb</span><span class="p">,</span> <span class="n">w</span><span class="p">,</span> <span class="n">phi</span><span class="p">,</span> <span class="n">h</span><span class="p">,</span> <span class="n">Tdp</span><span class="p">,</span> <span class="n">v</span></div>
+
+<div class="viewcode-block" id="saturation_pressure"><a class="viewcode-back" href="../../uwg.psychrometrics.html#uwg.psychrometrics.saturation_pressure">[docs]</a><span class="k">def</span> <span class="nf">saturation_pressure</span><span class="p">(</span><span class="n">Tdb_</span><span class="p">):</span>
+    <span class="n">T</span> <span class="o">=</span> <span class="n">Tdb_</span> <span class="o">+</span> <span class="mf">273.15</span>
+
+    <span class="c1"># N.B In Matlab, negative values are converted to complex values.</span>
+    <span class="c1"># log(-x) = log(x) + log(-1) = log(x) + i*pi</span>
+    <span class="c1"># Python will throw an exception. Negative value occurs here if</span>
+    <span class="c1"># simulation timestep (dtSim) is large, i.e 3600s.</span>
+    <span class="n">_Pws</span> <span class="o">=</span> <span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="o">*</span><span class="p">(</span><span class="mf">5.8002206e3</span><span class="p">)</span> <span class="o">/</span> <span class="n">T</span><span class="o">+</span><span class="mf">1.3914993</span> <span class="o">+</span> <span class="p">(</span><span class="mf">4.8640239e-2</span><span class="p">)</span><span class="o">*</span><span class="n">T</span><span class="o">*</span><span class="p">(</span><span class="o">-</span><span class="mf">1.</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="mf">4.1764768e-5</span><span class="p">)</span><span class="o">*</span><span class="nb">pow</span><span class="p">(</span><span class="n">T</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="mf">1.4452093e-8</span><span class="p">)</span><span class="o">*</span><span class="nb">pow</span><span class="p">(</span><span class="n">T</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span> <span class="o">+</span> <span class="mf">6.5459673</span><span class="o">*</span><span class="n">log</span><span class="p">(</span><span class="n">T</span><span class="p">))</span>  <span class="c1">#in Pa</span>
+    <span class="n">_Pws</span> <span class="o">=</span> <span class="n">_Pws</span><span class="o">/</span><span class="mf">1000.</span>                                                               <span class="c1"># in kPa</span>
+    <span class="k">return</span> <span class="n">_Pws</span></div>
+
+<div class="viewcode-block" id="moist_air_density"><a class="viewcode-back" href="../../uwg.psychrometrics.html#uwg.psychrometrics.moist_air_density">[docs]</a><span class="k">def</span> <span class="nf">moist_air_density</span><span class="p">(</span><span class="n">P</span><span class="p">,</span><span class="n">Tdb</span><span class="p">,</span><span class="n">H</span><span class="p">):</span>
+    <span class="c1"># Moist air density [kgv/ m-3] given dry bulb temperature, humidity ratio, and pressure.</span>
+    <span class="c1"># ASHRAE Fundamentals (2005) ch. 6 eqn. 28</span>
+    <span class="c1"># ASHRAE Fundamentals (2009) ch. 1 eqn. 28</span>
+    <span class="c1"># from: https://github.com/psychrometrics/Libraries/blob/master/Psychrometrics_SI.cpp</span>
+    <span class="n">moist_air_density</span> <span class="o">=</span> <span class="n">P</span><span class="o">/</span><span class="p">(</span><span class="mi">1000</span><span class="o">*</span><span class="mf">0.287042</span><span class="o">*</span><span class="n">Tdb</span><span class="o">*</span><span class="p">(</span><span class="mf">1.</span><span class="o">+</span><span class="mf">1.607858</span><span class="o">*</span><span class="n">H</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">moist_air_density</span></div>
+
+<div class="viewcode-block" id="HumFromRHumTemp"><a class="viewcode-back" href="../../uwg.psychrometrics.html#uwg.psychrometrics.HumFromRHumTemp">[docs]</a><span class="k">def</span> <span class="nf">HumFromRHumTemp</span><span class="p">(</span><span class="n">RH</span><span class="p">,</span><span class="n">T</span><span class="p">,</span><span class="n">P</span><span class="p">):</span>
+    <span class="c1"># Derive Specific HUmidity [kgh20/kgn202] from RH, T and Pa</span>
+    <span class="c1"># Saturation vapour pressure from ASHRAE</span>
+    <span class="n">C8</span> <span class="o">=</span> <span class="o">-</span><span class="mf">5.8002206e3</span>
+    <span class="n">C9</span> <span class="o">=</span> <span class="mf">1.3914993</span>
+    <span class="n">C10</span> <span class="o">=</span> <span class="o">-</span><span class="mf">4.8640239e-2</span>
+    <span class="n">C11</span> <span class="o">=</span> <span class="mf">4.1764768e-5</span>
+    <span class="n">C12</span> <span class="o">=</span> <span class="o">-</span><span class="mf">1.4452093e-8</span>
+    <span class="n">C13</span> <span class="o">=</span> <span class="mf">6.5459673</span>
+
+    <span class="n">T</span> <span class="o">+=</span> <span class="mf">273.15</span>
+
+    <span class="n">PWS</span> <span class="o">=</span> <span class="n">exp</span><span class="p">(</span><span class="n">C8</span><span class="o">/</span><span class="n">T</span> <span class="o">+</span> <span class="n">C9</span> <span class="o">+</span> <span class="n">C10</span><span class="o">*</span><span class="n">T</span> <span class="o">+</span> <span class="n">C11</span> <span class="o">*</span> <span class="nb">pow</span><span class="p">(</span><span class="n">T</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="n">C12</span> <span class="o">*</span> <span class="nb">pow</span><span class="p">(</span><span class="n">T</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span> <span class="o">+</span> <span class="n">C13</span> <span class="o">*</span> <span class="n">log</span><span class="p">(</span><span class="n">T</span><span class="p">))</span>
+    <span class="n">PW</span> <span class="o">=</span> <span class="n">RH</span><span class="o">*</span><span class="n">PWS</span><span class="o">/</span><span class="mf">100.0</span>        <span class="c1"># Vapour pressure</span>
+    <span class="n">W</span> <span class="o">=</span> <span class="mf">0.62198</span><span class="o">*</span><span class="n">PW</span><span class="o">/</span><span class="p">(</span><span class="n">P</span><span class="o">-</span><span class="n">PW</span><span class="p">)</span>    <span class="c1"># 4. Specific humidity</span>
+    <span class="k">return</span> <span class="n">W</span></div>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">function psat = psat(temp,parameter)</span>
+<span class="sd">    gamw  = (parameter.cl - parameter.cpv) / parameter.rv;</span>
+<span class="sd">    betaw = (parameter.lvtt/parameter.rv) + (gamw * parameter.tt);</span>
+<span class="sd">    alpw = log(parameter.estt) + (betaw /parameter.tt) + (gamw *log(parameter.tt));</span>
+<span class="sd">    psat = zeros(size(temp));</span>
+<span class="sd">    for jj=1:size(temp)</span>
+<span class="sd">        psat = exp(alpw - betaw/temp - gamw*log(temp));</span>
+<span class="sd">    end</span>
+<span class="sd">end</span>
+
+<span class="sd">% Not used for this release but saved for possible future use</span>
+<span class="sd">function Twb = wet_bulb(Tdb,Tdp,pres)</span>
+
+<span class="sd">    % Copyright (c) 2015, Rolf Henry Goodwin</span>
+<span class="sd">    % All rights reserved.</span>
+<span class="sd">    %</span>
+<span class="sd">    % Redistribution and use in source and binary forms, with or without</span>
+<span class="sd">    % modification, are permitted provided that the following conditions are</span>
+<span class="sd">    % met:</span>
+<span class="sd">    %</span>
+<span class="sd">    %     * Redistributions of source code must retain the above copyright</span>
+<span class="sd">    %       notice, this list of conditions and the following disclaimer.</span>
+<span class="sd">    %     * Redistributions in binary form must reproduce the above copyright</span>
+<span class="sd">    %       notice, this list of conditions and the following disclaimer in</span>
+<span class="sd">    %       the documentation and/or other materials provided with the distribution</span>
+<span class="sd">    %</span>
+<span class="sd">    % THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot;</span>
+<span class="sd">    % AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE</span>
+<span class="sd">    % IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE</span>
+<span class="sd">    % ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE</span>
+<span class="sd">    % LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR</span>
+<span class="sd">    % CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF</span>
+<span class="sd">    % SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS</span>
+<span class="sd">    % INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN</span>
+<span class="sd">    % CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)</span>
+<span class="sd">    % ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE</span>
+<span class="sd">    % POSSIBILITY OF SUCH DAMAGE.</span>
+
+<span class="sd">    % Code modified to merge into a single file - Joseph Yang, 2016</span>
+
+
+<span class="sd">    % Tdb, Tdp, Twb in K</span>
+<span class="sd">    % p in Pa (obtained function uses hPa, so /100 needed)</span>
+<span class="sd">    global T;</span>
+<span class="sd">    global T_d;</span>
+<span class="sd">    global p;</span>
+<span class="sd">    T = Tdb;</span>
+<span class="sd">    T_d = Tdp;</span>
+<span class="sd">    p = pres/100;</span>
+
+<span class="sd">    Twb = root_finder(@Delta_q,T_d,T);</span>
+<span class="sd">end</span>
+
+<span class="sd">function dQTw = Delta_q(T_w)</span>
+<span class="sd">    %Delta_q finds the value of function dq(Tw)</span>
+<span class="sd">    %INPUT wet bulb temperature T_w</span>
+<span class="sd">    %OUTPUT dq(Tw)</span>
+<span class="sd">    global T;</span>
+<span class="sd">    global T_d;</span>
+<span class="sd">    global p;</span>
+
+<span class="sd">    Cp = 1005; % Heat capacity of water vapor in J/(kg*K)</span>
+<span class="sd">    L = 2.501e6; % Latent heat of water vapor at 0 degC in J/kg</span>
+<span class="sd">    w1 = mixing_ratio(T_d,p); % Mixing ratio corresponding to T_d and p</span>
+<span class="sd">    w2 = mixing_ratio(T_w,p); % Mixing ratio corresponding to T_w and p</span>
+
+<span class="sd">    dQTw = (L*(w2-w1))/(1+w2)-Cp*(T-T_w)*(1+0.8*w2); % Finds deltaq(Tw)</span>
+
+<span class="sd">end</span>
+<span class="sd">&quot;&quot;&quot;</span>
+</pre></div>
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.2.1.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

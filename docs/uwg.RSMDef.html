@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>uwg.RSMDef module &#8212; uwg  documentation</title>
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="uwg.UBLDef module" href="uwg.UBLDef.html" />
+    <link rel="prev" title="uwg.BEMDef module" href="uwg.BEMDef.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          uwg</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="uwg.html">uwg package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="uwg.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="uwg.cli.html">uwg.cli package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="uwg.cli.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="uwg.cli.validate.html">uwg.cli.validate module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="uwg.cli.html#module-uwg.cli">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="reference internal" href="uwg.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="uwg.BEMDef.html">uwg.BEMDef module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">uwg.RSMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.UBLDef.html">uwg.UBLDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.UCMDef.html">uwg.UCMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.building.html">uwg.building module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.element.html">uwg.element module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.forcing.html">uwg.forcing module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.infracalcs.html">uwg.infracalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.material.html">uwg.material module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.param.html">uwg.param module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.psychrometrics.html">uwg.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.readDOE.html">uwg.readDOE module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.schdef.html">uwg.schdef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.simparam.html">uwg.simparam module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.solarcalcs.html">uwg.solarcalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.urbflux.html">uwg.urbflux module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.utilities.html">uwg.utilities module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.uwg.html">uwg.uwg module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.weather.html">uwg.weather module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="uwg.html#module-uwg">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="uwg.html">uwg package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="uwg.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="uwg.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="uwg.BEMDef.html">uwg.BEMDef module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">uwg.RSMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.UBLDef.html">uwg.UBLDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.UCMDef.html">uwg.UCMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.building.html">uwg.building module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.element.html">uwg.element module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.forcing.html">uwg.forcing module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.infracalcs.html">uwg.infracalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.material.html">uwg.material module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.param.html">uwg.param module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.psychrometrics.html">uwg.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.readDOE.html">uwg.readDOE module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.schdef.html">uwg.schdef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.simparam.html">uwg.simparam module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.solarcalcs.html">uwg.solarcalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.urbflux.html">uwg.urbflux module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.utilities.html">uwg.utilities module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.uwg.html">uwg.uwg module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.weather.html">uwg.weather module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="uwg.html#module-uwg">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="uwg.BEMDef.html" title="Previous Chapter: uwg.BEMDef module"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; uwg.BEMDef module</span>
+    </a>
+  </li>
+  <li>
+    <a href="uwg.UBLDef.html" title="Next Chapter: uwg.UBLDef module"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">uwg.UBLDef module &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="_sources/uwg.RSMDef.rst.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="uwg.html">uwg package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="uwg.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="uwg.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="uwg.BEMDef.html">uwg.BEMDef module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">uwg.RSMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.UBLDef.html">uwg.UBLDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.UCMDef.html">uwg.UCMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.building.html">uwg.building module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.element.html">uwg.element module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.forcing.html">uwg.forcing module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.infracalcs.html">uwg.infracalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.material.html">uwg.material module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.param.html">uwg.param module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.psychrometrics.html">uwg.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.readDOE.html">uwg.readDOE module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.schdef.html">uwg.schdef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.simparam.html">uwg.simparam module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.solarcalcs.html">uwg.solarcalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.urbflux.html">uwg.urbflux module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.utilities.html">uwg.utilities module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.uwg.html">uwg.uwg module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.weather.html">uwg.weather module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="uwg.html#module-uwg">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <div class="section" id="module-uwg.RSMDef">
+<span id="uwg-rsmdef-module"></span><h1>uwg.RSMDef module<a class="headerlink" href="#module-uwg.RSMDef" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="uwg.RSMDef.RSMDef">
+<em class="property">class </em><code class="sig-prename descclassname">uwg.RSMDef.</code><code class="sig-name descname">RSMDef</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">lat</span></em>, <em class="sig-param"><span class="n">lon</span></em>, <em class="sig-param"><span class="n">GMT</span></em>, <em class="sig-param"><span class="n">height</span></em>, <em class="sig-param"><span class="n">T_init</span></em>, <em class="sig-param"><span class="n">P_init</span></em>, <em class="sig-param"><span class="n">parameter</span></em>, <em class="sig-param"><span class="n">z_meso_path</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/uwg/RSMDef.html#RSMDef"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#uwg.RSMDef.RSMDef" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>% Rural Site &amp; Vertical Diffusion Model (VDM)
+% Calculates the vertical profiles of air temperature above the weather
+% station per ‘The uwg’ (2012) Eq. 4, 5, 6.</p>
+<dl class="simple">
+<dt>properties</dt><dd><p>lat;           % latitude (deg)
+lon;           % longitude (deg)
+GMT;           % GMT hour correction
+height         % average obstacle height (m)
+z0r;           % rural roughness length (m)
+disp;          % rural displacement length (m)
+z;             % vertical height (m)
+dz;            % vertical discretization (m)
+nz0;           % layer number at zmt (m)
+nzref;         % layer number at zref (m)
+nzfor;         % layer number at zfor (m)
+nz10;          % layer number at zmu (m)
+nzi;           % layer number at zi_d (m)
+tempProf;      % potential temperature profile at the rural site (K)
+presProf;      % pressure profile at the rural site (Pa)
+tempRealProf;  % real temperature profile at the rural site (K)
+densityProfC;  % density profile at the center of layers (kg m-3)
+densityProfS;  % density profile at the sides of layers (kg m-3)
+windProf;      % wind profile at the rural site (m s-1)
+ublPres;       % Average pressure at UBL (Pa)</p>
+</dd>
+</dl>
+<p>end</p>
+<dl class="py method">
+<dt id="uwg.RSMDef.RSMDef.DiffusionCoefficient">
+<code class="sig-name descname">DiffusionCoefficient</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rho</span></em>, <em class="sig-param"><span class="n">z</span></em>, <em class="sig-param"><span class="n">dz</span></em>, <em class="sig-param"><span class="n">z0</span></em>, <em class="sig-param"><span class="n">disp</span></em>, <em class="sig-param"><span class="n">tempRur</span></em>, <em class="sig-param"><span class="n">heatRur</span></em>, <em class="sig-param"><span class="n">nz</span></em>, <em class="sig-param"><span class="n">uref</span></em>, <em class="sig-param"><span class="n">th</span></em>, <em class="sig-param"><span class="n">parameter</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/uwg/RSMDef.html#RSMDef.DiffusionCoefficient"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#uwg.RSMDef.RSMDef.DiffusionCoefficient" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="uwg.RSMDef.RSMDef.DiffusionEquation">
+<code class="sig-name descname">DiffusionEquation</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">nz</span></em>, <em class="sig-param"><span class="n">dt</span></em>, <em class="sig-param"><span class="n">co</span></em>, <em class="sig-param"><span class="n">da</span></em>, <em class="sig-param"><span class="n">daz</span></em>, <em class="sig-param"><span class="n">cd</span></em>, <em class="sig-param"><span class="n">dz</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/uwg/RSMDef.html#RSMDef.DiffusionEquation"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#uwg.RSMDef.RSMDef.DiffusionEquation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="uwg.RSMDef.RSMDef.DissipationBougeault">
+<code class="sig-name descname">DissipationBougeault</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">g</span></em>, <em class="sig-param"><span class="n">nz</span></em>, <em class="sig-param"><span class="n">z</span></em>, <em class="sig-param"><span class="n">dz</span></em>, <em class="sig-param"><span class="n">te</span></em>, <em class="sig-param"><span class="n">pt</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/uwg/RSMDef.html#RSMDef.DissipationBougeault"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#uwg.RSMDef.RSMDef.DissipationBougeault" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="uwg.RSMDef.RSMDef.LengthBougeault">
+<code class="sig-name descname">LengthBougeault</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">nz</span></em>, <em class="sig-param"><span class="n">dld</span></em>, <em class="sig-param"><span class="n">dlu</span></em>, <em class="sig-param"><span class="n">z</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/uwg/RSMDef.html#RSMDef.LengthBougeault"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#uwg.RSMDef.RSMDef.LengthBougeault" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="uwg.RSMDef.RSMDef.VDM">
+<code class="sig-name descname">VDM</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">forc</span></em>, <em class="sig-param"><span class="n">rural</span></em>, <em class="sig-param"><span class="n">parameter</span></em>, <em class="sig-param"><span class="n">simTime</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/uwg/RSMDef.html#RSMDef.VDM"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#uwg.RSMDef.RSMDef.VDM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="uwg.RSMDef.RSMDef.invert">
+<code class="sig-name descname">invert</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">nz</span></em>, <em class="sig-param"><span class="n">A</span></em>, <em class="sig-param"><span class="n">C</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/uwg/RSMDef.html#RSMDef.invert"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#uwg.RSMDef.RSMDef.invert" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>Inversion and resolution of a tridiagonal matrix</dt><dd><p>A X = C</p>
+</dd>
+<dt>Input:</dt><dd><p>nz number of layers
+a(<em>,1) lower diagonal (Ai,i-1)
+a(</em>,2) principal diagonal (Ai,i)
+a(<a href="#id1"><span class="problematic" id="id2">*</span></a>,3) upper diagonal (Ai,i+1)
+c</p>
+</dd>
+<dt>Output</dt><dd><p>x     results</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.RSMDef.RSMDef.is_near_zero">
+<code class="sig-name descname">is_near_zero</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">num</span></em>, <em class="sig-param"><span class="n">eps</span><span class="o">=</span><span class="default_value">1e-16</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/uwg/RSMDef.html#RSMDef.is_near_zero"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#uwg.RSMDef.RSMDef.is_near_zero" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="uwg.RSMDef.RSMDef.load_z_meso">
+<code class="sig-name descname">load_z_meso</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">z_meso_path</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/uwg/RSMDef.html#RSMDef.load_z_meso"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#uwg.RSMDef.RSMDef.load_z_meso" title="Permalink to this definition">¶</a></dt>
+<dd><p>Open the z_meso.txt file and return heights as list</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="uwg.RSMDef.RSMDef.Z_MESO_FILE_NAME">
+<code class="sig-name descname">Z_MESO_FILE_NAME</code><em class="property"> = 'z_meso.txt'</em><a class="headerlink" href="#uwg.RSMDef.RSMDef.Z_MESO_FILE_NAME" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.2.1.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
